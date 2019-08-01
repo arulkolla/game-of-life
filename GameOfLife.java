@@ -2,8 +2,6 @@
  * GameOfLife main program - by Arul Kolla
  * Constructors: 
  */
-package gameOfLife;
-
 import java.util.Arrays;
 
 public class GameOfLife {
