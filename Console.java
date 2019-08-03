@@ -16,7 +16,7 @@ public class Console implements DisplayDriver {
         for (Cell[] row : plane) {
             String r = "|";
             for (Cell c : row) {
-                if (c.returnState() == true) {r += " \u25a0";} //add circle for alive cell
+                if (c.returnState() == true) {r += " \u25a0";} //add symbol for alive cell
                 else {r += "  ";} //leave space for dead cell
             }
             r += "|";

@@ -21,7 +21,7 @@ public class GameOfLife {
 			case 1: //If you picked glider
 				Board b1 = new Board(30, 30);
 				Board.gliderSetup(); //Setup the board to a glider
-		        for (int i = 0; i <= 50; i++) {
+		        for (int i = 0; i <= 60; i++) {
 		        	dd.displayBoard(b1);
 		            b1.doIt();
 		            Thread.sleep(300);
@@ -42,7 +42,7 @@ public class GameOfLife {
 		        for (int i = 0; i <= 180; i++) {
 		        	dd.displayBoard(b3);
 		            b3.doIt();
-		            Thread.sleep(300);
+		            Thread.sleep(200);
 		        }
 			default: //Defaults to glider
 				System.out.println("Couldn't understand your input. Defaulting to glider. Please wait.");
@@ -66,7 +66,7 @@ public class GameOfLife {
 	        for (int i = 0; i <= iterations; i++) { //Does as many iterations as asked for
 	        	dd.displayBoard(b2);
 	            b2.doIt();
-	            Thread.sleep(300); //Gives a small pause between iterations
+	            Thread.sleep(100); //Gives a small pause between iterations
 	        }
 			break;
 		default:
